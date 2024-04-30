@@ -1,0 +1,24 @@
+public class PPPInheriJava{
+    private
+    int pri=10;
+    public
+    int pub=11;
+    protected
+    int pro=12;
+
+    public
+    int getpri(){
+        return pri;
+    }
+}
+class subclass extends PPPInheriJava{
+    int var1=getpri();
+}
+class test{
+    public static void main(String[] args) {
+        subclass x = new subclass();
+        System.out.println("public variable :"+x.pub);
+        System.out.println("protected variable :"+x.pro);
+        System.out.println("private variable :"+x.var1);
+    }
+}
